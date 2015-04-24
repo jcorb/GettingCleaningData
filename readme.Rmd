@@ -15,7 +15,7 @@ The variables to be output are selected by using a search on the words "mean()" 
 The variable names are tidied up according to the ideal format given in the lecture notes, i.e set to lower case and undescores, parentheses are removed.
 The means for each variable are calulated using the dplyr package so this must be installed for this code to run.
 
-load\\_UCIHAR(dataset, meanstd.var\\_names,column.names)
+load\_UCIHAR(dataset, meanstd.var\_names,column.names)
 -------------------------------------------------------
 This is a helper function called from run_analysis.R in order to load the "test" and "train" datasets.
 inputs:

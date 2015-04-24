@@ -23,7 +23,7 @@ inputs:
   - meanstd.var_names, a vector that determines which of the variable columns of the dataste to retain.
   - column.names, a character vector with the names of the retained columns.
   
-  output:
+output:
     - a dataframe containing the selected variables.  The first column gives the activity and the second column give the subject ID.
 
 

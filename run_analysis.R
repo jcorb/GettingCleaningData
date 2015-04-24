@@ -1,6 +1,8 @@
 run_analysis <- function(){
-  ##going to use plyr here
-  ## a function to load and tidy the individual datasets
+  ## a function to load, tidy, summarize, and output the UCI HAR Dataset
+  ## takes no inputs
+  ## outputs a tidied dataset with the means of the mean and standard deviation
+  ## variables for each activity and subject.
   load_UCIHAR <- function(dataset,meanstd.var_names,column.names){
     ## this function will load the measurement, activity index and subject index files
     ## the measurements that are retained are set by meanstd.var_names, and the column names

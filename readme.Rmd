@@ -1,0 +1,30 @@
+---
+title: "readme"
+output: html_document
+---
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+Readme
+======
+run_analysis.R
+--------------
+This code reads in the "test" and "train" datasets from the UCI HAR Dataset.  The two datasets are merged and then the averages of a selected set of variables for each activity and subject are outputted into a text file.
+The code assumes that a folder called "UCI HAR Dataset" is in the working directory and within that there are two folders, called "test" and "train" that each contain 3 files containg subject id's, activity id's and the data.
+The variables to be output are selected by using a search on the words "mean()" and "std()".  Note that the search is implemented in a way to exclude variables containing teh terms meanFreq.
+The variable names are tidied up according to the ideal format given in the lecture notes, i.e set to lower case and undescores, parentheses are removed.
+The means for each variable are calulated using the dplyr package so this must be installed for this code to run.
+
+load\\_UCIHAR(dataset, meanstd.var\\_names,column.names)
+-------------------------------------------------------
+This is a helper function called from run_analysis.R in order to load the "test" and "train" datasets.
+inputs:
+  - dataset, a character that is either "test" or "train"
+  - meanstd.var_names, a vector that determines which of the variable columns of the dataste to retain.
+  - column.names, a character vector with the names of the retained columns.
+  
+  output:
+    - a dataframe containing the selected variables.  The first column gives the activity and the second column give the subject ID.
+
+
+  

@@ -1,0 +1,23 @@
+---
+title: "codebook"
+output: html_document
+---
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+Codebook for Getting and Cleaning Data Course Project.
+=====================================================
+Original Dataset Information
+-----------------------------
+The dataset created by the run_analysis.R code is based upon the data from the Human Activity Recognition Using Smartphones Data Set from the UCI Machine Learning Repository.  The orginal dataset is available here: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
+
+Details of the how the data were obtained are availble on the above website.  Briefly, the original dataset contains 3-axial linear accelertion and 3-axial angular velocity measurements taken from a smartphone while volunteers performed a series of controlled experiments.  30 subjects were involved in the study, with each performing 6 experiments: Laying, Standing, Sitting, Walking Downstairs, Walking Upstairs, and Walking.
+
+Tidy Dataset Information
+------------------------
+The dataset produced by the run_analysis.R code is an example of a tidy dataset, attempting to apply the principles of tidy datasets.
+The dataset contains 66 variables, which are the mean values of the variables from the original dataset the were themselves either means or standard devaitions of the raw axial acceleration or velocity signals.  The means in the tidy dataset are computed for each subject and activity.
+The list of variables in the tidy dataset is given here:
+"activity" "subject" "tbodyaccmeanx" "tbodyaccmeany" "tbodyaccmeanz" "tbodyaccstdx" "tbodyaccstdy" "tbodyaccstdz" "tgravityaccmeanx" "tgravityaccmeany" "tgravityaccmeanz" "tgravityaccstdx" "tgravityaccstdy" "tgravityaccstdz" "tbodyaccjerkmeanx" "tbodyaccjerkmeany" "tbodyaccjerkmeanz" "tbodyaccjerkstdx" "tbodyaccjerkstdy" "tbodyaccjerkstdz" "tbodygyromeanx" "tbodygyromeany" "tbodygyromeanz" "tbodygyrostdx" "tbodygyrostdy" "tbodygyrostdz" "tbodygyrojerkmeanx" "tbodygyrojerkmeany" "tbodygyrojerkmeanz" "tbodygyrojerkstdx" "tbodygyrojerkstdy" "tbodygyrojerkstdz" "tbodyaccmagmean" "tbodyaccmagstd" "tgravityaccmagmean" "tgravityaccmagstd" "tbodyaccjerkmagmean" "tbodyaccjerkmagstd" "tbodygyromagmean" "tbodygyromagstd" "tbodygyrojerkmagmean" "tbodygyrojerkmagstd" "fbodyaccmeanx" "fbodyaccmeany" "fbodyaccmeanz" "fbodyaccstdx" "fbodyaccstdy" "fbodyaccstdz" "fbodyaccjerkmeanx" "fbodyaccjerkmeany" "fbodyaccjerkmeanz" "fbodyaccjerkstdx" "fbodyaccjerkstdy" "fbodyaccjerkstdz" "fbodygyromeanx" "fbodygyromeany" "fbodygyromeanz" "fbodygyrostdx" "fbodygyrostdy" "fbodygyrostdz" "fbodyaccmagmean" "fbodyaccmagstd" "fbodybodyaccjerkmagmean" "fbodybodyaccjerkmagstd" "fbodybodygyromagmean" "fbodybodygyromagstd" "fbodybodygyrojerkmagmean" "fbodybodygyrojerkmagstd"
+"activity" and "subject" identify what activty was been performed by each subject.  The activity is given by a label and the subject is an identifier from 1-30. 
+
